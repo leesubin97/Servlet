@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src = "https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+
+<form action="data1" id = "frm"  method="post">
+<table>
+	<tr>
+	<td>이름</td>
+	<td><input type = "text" name = "name" id = "_name"> </td>
+	
+	</tr>
+	
+	<tr>
+	<td>연령대</td>
+	<td>
+	
+		<select name = "age">
+			<option value = "10~20">10대~20대</option>
+			<option value = "20~30">20대~30대</option>
+			<option value = "30~40">30대~40대</option>
+			<option value = "40~50">40대~50대</option>
+			
+		</select>
+	
+	
+	</td>
+	
+	</tr>
+	
+	<tr>
+	<td>성별</td>
+	<td>
+	  <input type="radio" name = "uniS" value = "남자"> 남자
+	  <input type="radio" name = "uniS" value = "여자"> 여자
+	
+	</td>
+	
+	</tr>
+	
+	<tr>
+	<td>취미</td>
+	<td>
+	 <input type="checkbox" name = "favor" value = "풋살"> 풋살<br>
+	  <input type="checkbox" name = "favor" value = "롤"> 롤<br>
+	  <input type="checkbox" name = "favor" value = "카페투어"> 카페투어
+	 </td>
+	
+	</tr>
+
+</table>
+
+<button type="button" id = "btn">확인</button>
+
+</form>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#btn").click(function () {
+		//검사
+		if($("#_name").val() == ""){
+			alert('이름을 입력해 주십시오');
+			return;
+		};
+		
+		
+		//alert('');
+		$("#frm").submit();
+	});
+});
+
+</script>
+
+</body>
+</html>

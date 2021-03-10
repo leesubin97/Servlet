@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>work</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  <servlet>
+  <servlet-name>data1</servlet-name>
+  <servlet-class>way.WayServlet1</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>data1</servlet-name>
+  <url-pattern>/data1</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+  <servlet-name>data2</servlet-name>
+  <servlet-class>way2.WayServlet2</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>data2</servlet-name>
+  <url-pattern>/data2</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+  <servlet-name>data3</servlet-name>
+  <servlet-class>way3.WayServlet3</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>data3</servlet-name>
+  <url-pattern>/data3</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>
